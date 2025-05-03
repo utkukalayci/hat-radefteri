@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hikayemiz</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #fdf6f0;
+            color: #333;
+        }
+        .section {
+            padding: 150px 20px;
+            text-align: center;
+        }
+        .countdown {
+            font-size: 2rem;
+            margin: 20px 0;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .gallery img, .gallery video {
+            width: 300px;
+            border-radius: 10px;
+        }
+        #proposal {
+            font-size: 3rem;
+            opacity: 0;
+            transition: opacity 2s ease-in-out;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10; /* Diğer elementlerin üzerinde görünmesi için */
+        }
+        .final-count {
+            font-size: 5rem;
+            font-weight: bold;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9; /* Proposal'ın altında kalması için */
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <h1>Hikayemiz 30 Ocak 1995'te başladı...</h1>
+    </div>
+    <div class="section">
+        <h2>Aceleci olduğun için sevgilim</h2>
+        <div class="countdown" id="cd1"></div>
+        <h2>boyunca benim doğmamı beklemen gerekti...</h2>
+        <div class="gallery">
+            <img src="s1.jpg" alt="Bebiş Şule 1">
+            <img src="s2.jpg" alt="Bebiş Şule 2">
+        </div>
+        <h2>22 Mart 1999'du seni daha fazla bekletmek istemedim...</h2>
+        <div class="gallery">
+            <img src="utku b.jpg" alt="Bebiş Utku 1">
+            <img src="u3.jpg" alt="Bebiş Utku 2">
+        </div>
+        <h2>gerçi ben zaten zamanında doğdum...</h2>
+    </div>
+    <div class="section">
+        <h1>Ve sonra birbirimizden habersiz büyüdük...</h1>
+    </div>
+    <div class="section">
+        <div class="countdown" id="cd2"></div>
+        <h2>Yani neredeyse 24 Yıl Boyunca...</h2>
+        <div class="gallery">
+            <img src="s3.jpg" alt="Çocuk Şule 1">
+            <img src="u1.jpg" alt="Çocuk Utku 1">
+            <img src="s4.jpg" alt="Çocuk Şule 2">
+            <img src="u4.jpg" alt="Çocuk Utku 2">
+            <img src="s5.jpg" alt="Çocuk Şule 3">
+            <img src="u5.jpg" alt="Çocuk Utku 3">
+            <img src="s6.jpg" alt="Çocuk Şule 4">
+            <img src="u6.jpg" alt="Çocuk Utku 4">
+            <img src="s7.jpg" alt="Çocuk Şule 5">
+            <img src="u7.jpg" alt="Çocuk Utku 5">
+        </div>
+        <h2>Bu iki çocuk tanışçaklarından habersizdi...</h2>
+    </div>
+    <div class="section">
+        <h1>Yıllar içinde güldük, eğlendik, üzüldük...</h1>
+    </div>
+    <div class="section">
+        <h1>Büyüdük....</h1>
+    </div>
+    <div class="section">
+        <h1>Sen güzel bir kadın oldun sevgilim...</h1>
+    </div>
+    <div class="section">
+        <h1>Ben de yanına yakışmaya çalışan bir erkek....</h1>
+    </div>
+    <div class="section">
+        <h1>Sonunda tarihler Ekim 2022'yi gösterdi...</h1>
+    </div>
+    <div class="section">
+        <h2>Ama uzun süreydi... Hiç bitmeyecek sanmıştım...</h2>
+    </div>
+    <div class="section">
+        <h1>Ve Birlikte Gururla Aksa'da Tanıştık...</h1>
+        <div class="countdown" id="cd3"></div>
+        <h2>boyunca Arkadaştık...</h2>
+    </div>
+    <div class="section">
+        <h2>Bu kadar gün naz yapmaya gerek var mıydı?</h2>
+    </div>
+    <div class="section">
+        <h2>Ve 3 Kasım 2024'den beri 6 ay geçti...</h2>
+        <div class="gallery">
+            <img src="semt.jpg" alt="Semt77">
+            <img src="bursa.jpg" alt="Bursa">
+            <img src="araba.jpg" alt="Arabada">
+            <img src="sarıyer.jpg" alt="Sarıyer">
+            <img src="dg.jpg" alt="Dogumgünü">
+            <img src="ayak kırma.jpg" alt="Bilek Burkma">
+            <img src="galata.jpg" alt="Galata">
+            <img src="konser.jpg" alt="Yalin 1">
+            <img src="karaköy.jpg" alt="Karaköy">
+            <img src="konser 2.jpg" alt="Yalin 3">
+        </div>
+    </div>
+    <div class="section">
+        <h1>6. Ayımıza kadar neler neler oldu...</h1>
+    </div>
+    <div class="section">
+        <h2>Hayatımda geçirdiğim en güzel 6 aydı...</h2>
+    </div>
+    <div class="section">
+        <h2>Ve 6. Ayımızın dolmasına kalan süre...</h2>
+        <div class="countdown" id="cd4"></div>
+        <h2>Evet... 0 gün :)</h2>
+    </div>
+    <div class="section">
+        <h2>Sonraki aylarımızda da daha neler neler olacak değil mi sevgilim...</h2>
+    </div>
+    <div class="section">
+        <h1>Gezilecek yerler...</h1>
+    </div>
+    <div class="section">
+        <h1>Yenecek yemekler...</h1>
+    </div>
+    <div class="section">
+        <h1>İzlenecek diziler...filmler...</h1>
+    </div>
+    <div class="section">
+        <h2>Daha Aşk-ı Memnu'yu bile bitiremedik...</h2>
+    </div>
+    <div class="section">
+        <h1>Her şeyi buraya yazmaya kalksam biraz uzun sürebilir...</h1>
+    </div>
+    <div class="section">
+        <h1>Bunları ve daha fazlasını hep seninle yapmak istiyorum...</h1>
+    </div>
+    <div class="section">
+        <h1>Uyandığımda ilk seni görmek...</h1>
+    </div>
+    <div class="section">
+        <h1>Uyurken son seni görmek...</h1>
+    </div>
+    <div class="section">
+        <h1>Tabii... Bunları yapabilmek için son bir soru var sormam gereken...</h1>
+        <div class="final-count" id="final-count"></div>
+    </div>
+    <div id="proposal" class="hidden">Sevgilim... Benimle Evlenir Misin?</div>
+    <script>
+        function daysBetween(date1, date2) {
+            const diff = new Date(date2) - new Date(date1);
+            return Math.ceil(diff / (1000 * 60 * 60 * 24));
+        }
+
+        function updateCountdown(id, startDate, endDate) {
+            const el = document.getElementById(id);
+            const days = daysBetween(startDate, endDate);
+            el.innerText = `${days} gün`;
+        }
+
+        // Sayaç 1: 30 Ocak 1995 - 22 Mart 1999
+        updateCountdown("cd1", "1995-01-30", "1999-03-22");
+
+        // Sayaç 2: 22 Mart 1999 - 11 Ekim 2022
+        updateCountdown("cd2", "1999-03-22", "2022-10-11");
+
+        // Sayaç 3: 11 Ekim 2022 - 3 Kasım 2024
+        updateCountdown("cd3", "2022-10-11", "2024-11-03");
+
+        // Sayaç 4: 3 Kasım 2024 - 3 Mayıs 2025 (şu anki tarih)
+        const now = new Date();
+        const targetDate4 = new Date("2025-05-03");
+        const daysLeft = Math.ceil((targetDate4 - now) / (1000 * 60 * 60 * 24));
+        document.getElementById("cd4").innerText = `${daysLeft} gün kaldı`;
+
+
+        // Final 5-4-3-2-1 geri sayımı ve ardından "Benimle Evlenir Misin?" yazısını gösterme
+        setTimeout(() => {
+            const finalCountElement = document.getElementById("final-count");
+            const proposalElement = document.getElementById("proposal");
+            proposalElement.classList.remove("hidden"); // Proposal elementini görünür yap
+            let counter = 5;
+            const interval = setInterval(() => {
+                finalCountElement.innerText = counter;
+                counter--;
+                if (counter < 0) {
+                    clearInterval(interval);
+                    finalCountElement.style.display = "none"; // Sayacı gizle
+                    proposalElement.style.opacity = 1;
+                }
+            }, 1000);
+        }, 25000); // 25 saniye sonra başlat (isteğe göre ayarlanabilir)
+    </script>
+</body>
+</html>
